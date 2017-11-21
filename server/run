@@ -1,0 +1,1 @@
+java -cp build/libs/server.jar:../common/build/libs/common.jar escort.server.main.ServerLauncher

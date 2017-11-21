@@ -1,0 +1,96 @@
+Included in the game:
+
+2.5D
+We have decided to go for a 2.5D top-down perspective, but not a direct bird's-eye view in order to give depth to boundaries such as walls. This will grant players the freedom to move in 8 directions and feel in control of their unit. The game will only have 2 layers of depth (in order to not be confusing) – The ground tiles (the floor), and the obstacle tiles (think of boxes and walls placed on the ground that are the size of a character). We could have chosen to design the game in 2d but we didn't feel that the game would have been engaging enough for the type of game we are designing.
+
+Sliding movement:
+When the creator of Super Mario Bros, Shigeru Miyamoto, was asked why the Mario franchise was so popular, he talked about the way they implemented movement. One element of Mario’s movement was his slide (he doesn’t stop moving exactly when a button is released). This made the movement feel more natural, making our players feel immersed into the game.
+
+Sound:
+As our game is very pixilated and blocky, we had to design music that fitted with the theme. So the obvious choice was to create 8 bit like music and sound effects. This made the game feel more retro and having the arcade-sounding sound effects and chiptune music made the game more immersive and engaging.
+
+Graphics2d:
+We used graphics2D because it is an easy to use graphics library that is built into java. There a lot of method that are helpful such as getting the screen resolution so can scale properly to fit your screen size. We could have used other graphics libraries that would have been faster. But as our team was inexperienced in writing a graphic user interface, we stuck with the basics.
+
+Grenades:
+We decided to include the use of grenades in our game as this would allow the players to have a variety of damaging weapons at their disposal. It also introduced an area of effect damage so a player is able to deal damage to a area of players.
+
+TCP and UDP:
+We used the TCP and UDP protocols because it is a common standard that most programs and game use these days so will be suitable. This will also make the game work in most network environments.
+We used tcp because it provides a mechanism to guarantee any messages sent between server and the client reaching each other. Libraries for encryption are also ready for use to secure the data sent between the server and client. It is useful if the client is connecting through an insecure network such as public WiFi or a restrictive network which prevents UDP from working properly.
+We also decides to include the use of UDP because it gives us The benefit from it is not all lost messages have to be resent as they may be out of date such as the game state. This allows server and client to selectively resend important lost information only, increasing efficiency. At the same time, it reduces handshaking to reduce the delay. This made it useful when the player is far away from the server or is connecting through a trusted network. But UDP does have its drawbacks sudo as that it doesn’t guarantee each packet can reach each side as packet loss are not handled by the protocol.
+
+Encryption:
+We have used TLS to encrypt our traffic because it prevents attackers from man in the middle attacking our connection and so not being able to change the packets. This provides a more secure game and ensure that the players get a smooth game without the worries of being interfered.
+
+Cheat prevention:
+We have considered using cheat prevention for some aspect of our game such as throwing grenades and shooting. This mean that players can throw grenades if they don’t have any grenades left even if they spoof the packets to throw a grenade. This is the same for shooting. When the server receives a message from the client, the server check if the player can do whatever it needs to do as the client will only send an action not the result of the an action. So the server will execute the action and send the result to the client.
+
+Power ups:
+We have added power ups to the game so that it makes the game more interesting. It can provide a second change to a player if the run out of ammo or have very little health. This can make the game last longer and provide more entertainment. To pick up a power up, you just walk over it. We included a time out for the power ups so that they disappear after a set time to prevent spamming. Is also reduced the effectiveness of power ups as not all of them are active so will have to rely on the skills of the player.
+
+Map creator:
+We have created the map load so that it takes an images and each pixel represents a tile. This also allows other people to create their own map by drawing one, all you need is a simple image editor like paint to create these images and then load them into the game.
+
+Radar/hud:
+We have included a radar in our game to allow you to see all players on the map. We intended to have a power up called the bald eagle that allows you to see enemies, but as this didn't get included, you can see the enemies all the time. At at the top of the screen, we includes a heads up display that shows how much ammo you have left, how many grenades and your blast shield hit points left.
+
+Setings:
+We have include a setting menu that allows players to change their environment to their liking. You can change the the resolution of the game depending on your monitor. The game does detect the resolution of your screen but you can change it manually anyway. You can choose to play fullscreen or windowed and change the volume of the music and sound effects or mute either. You can also change the key bindings of all keys in the game to allow player to change what keys they like to use.
+
+Shields:
+We have included a blast shield that reduces damage from damaging weapons. The blast shields will stop bullet damage completely where it only stops 80% of grenade damage. The shield can be use for a tactical advantage where if the reloading time will kill you and you need to make a retreat, the shield would be a good choice.
+
+Unit assignment:
+If you are the only player, you will always be assigned an escort because there must always be one escort to protect the presidents and lead him to safety. When there are more players, overall there will be more assassin's than escorts as there is an advantage to the escort side than the assassin side. This is due to that the president has many police ai around him all the time so need to defeat the police and escorts to then attack the president. This assignment is random so that players can get a chance of player on the opposite side.
+
+Leaving game:
+When you leave the game you are replaced by an ai. The ai that replaced you will be of the same character that you were playing. This is so that your team isn’t handicapped and have less players. 
+
+President follow system:
+The president's ai was kept simple so not to over complicate things. The president only moved when an escort came close enough and pressed the ‘F’ key (or what the player bound to the follow key). This allows an easy implementation as some of our other ideas were quite complex. When the escort dies, the president will just stand and not move because of the way we implemented the following system, as we assume that president is defenceless and relied on the escorts and police to protect him.
+
+AI shoot:
+We decides that the ai shouldn’t be on point every shoot so decided to give the ai a slight inaccuracy to the shooting to give the ai more of a human like shooting effect and less robotic and cheaty.
+
+Civilians:
+To add to the feel to the game, we include civilians to the game. These just wander around and do nothing toward completing the game. This just give the added feel to the game that there are people to look out for. This also has the added benefit that it fills the map up with extras so not to feel so empty when playing. You could also think that if this would happen in real life, there would be people around in panic as well.
+
+Pistols unlimited ammo:
+We have decided for the pistol to have unlimited ammo as all player should have a weapon that they can use and not feel empty.
+
+Pistol and machine gun semi and full auto:
+We have include a weapon type choice in our game to give more of a variety of gameplay that the user can experience. This pistol is a semi-automatic weapon where the machine gun is a fully automatic weapon.
+
+Spectating:
+We have include a respawn time when you die so during this time of waiting we have implemented a spectator system that allows you to see what other players are doing. Also it gives you something to do whilst you wait. You can cycle through your team and the opposite team so to compose yourself and gain insight in what the other team might do.
+
+Returning to lobby:
+We wanted to have a complete game that can be played without restarting the client and have a all round experience. So when the game ends, it displays a screen saying who has won then returns back to the lobby. A new game can be started afterward or you can leave the lobby and join another if you didn't like the team and kept dieing.
+
+Camera movement:
+During game play, the camera will follow you around the map. But we have also included a feature to the camera that allows you to freely move it around the map to see what is going on. To do this, you press the ‘Y’ key (or what you have bound to it) and you can use the mouse to move the camera around. By moving the mouse to the edges of the screen the camera will follow and move in that direction.
+
+
+Not included in the game:
+
+Civilians:
+We intended on having 20 civilians in the game but we found that this created a lot of lag and made the game less enjoyable. So we reduced it to a maximum to 5. The civilians can be changed before the game has started from 0 to 5 civilians.
+
+Menace:
+We didn't include the menace system because we felt that it would have made the assassin player more confused and there would have been too much going on. 
+
+Health on blast shield:
+We decided to reduce the hit points of the blast shield by half because during game play you could run the president to the safe zone without dieing and in turn making it impossible for the assassins to kill the escorts.
+
+Units dropping items on death:
+When a unit dies, we decided not to have the unit drop their left over ammo and grenades. This is due to that we have power up that adds grenades and extra magazine anyway. So having this feature would have introduced too much ammunition and grenades.
+
+Super power ups:
+We didn't include super power ups because it would have made the game to unbalanced. The player that would pick up one of these would have been too overpowered.
+
+Rolling:
+We didn't include the rolling mechanism because we saw that it would have been to difficult to implement within the time scale we were giving.
+
+Scoreboard:
+Due to the time scale that we given to produce a game. We had to cut out some feature from our original specification, one is the scoreboard. This was a low priority for the game as we wanted to have a playable game first and then add to it if we had time. This is also the same for the running mechanism.

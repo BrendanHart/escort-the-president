@@ -1,0 +1,5 @@
+Launching the client:
+java -jar Client.java
+
+Launching the server:
+java -jar Server.java

@@ -1,0 +1,3 @@
+If you fancy a game on your own or want to add a twist to the balance of the game, then you can add Police, Assassins and Civilians AI. This is done from the lobby menu and only the lobby owner can change these values.
+In the event that you are the only player, you will always be an Escort fighting to Escort The President.
+Press the follow button (default F key) as an Escort near the president to request to follow (only if the President isn't already following an Escort). Press F again to tell the President to stop following. 

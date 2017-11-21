@@ -1,0 +1,31 @@
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+
+dependencies {
+  testCompile 'junit:junit:4.4'
+}
+
+sourceSets.main {
+    java.srcDir 'src'
+    resources.srcDir 'src'
+    output.resourcesDir 'escort/client/res'
+}
+
+sourceSets.test {
+    java.srcDir '../client-test/src'
+    resources.srcDir 'src'
+    output.resourcesDir 'escort/client/res'
+}
+
+dependencies {
+    compile project(':common')
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'escort.client.main.ClientLauncher'
+    }
+}

@@ -1,0 +1,22 @@
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+
+dependencies {
+  testCompile 'junit:junit:4.4'
+}
+
+sourceSets.main {
+    java.srcDir 'src'
+    resources.srcDir 'src'
+    output.resourcesDir 'escort/common/game/map'
+}
+
+sourceSets.test {
+    java.srcDir '../common-test/src'
+    resources.srcDir 'src'
+    output.resourcesDir 'escort/common/game/map'
+}
+

@@ -1,0 +1,3 @@
+Escort The President is a game where each rounds consists of Assassins attempting to assassinate the president. Escorts, with the aid of Police Officers. attempt to escort the president to the safe-zone alive. To make matters worse, this is in public streets and there are civilians everywhere!
+Escorts must take the President to the safe zone alive. This is marked on the map by rainbow coloured tiles. Escorts are aided by Police Officers who will kill all Assassin that they encounter.
+Assassins must kill the President before he reaches the safe zone. Do this by any means necessary!

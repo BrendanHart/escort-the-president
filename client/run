@@ -1,0 +1,1 @@
+java -cp build/libs/client.jar:../common/build/libs/common.jar escort.client.main.ClientLauncher

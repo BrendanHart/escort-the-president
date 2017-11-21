@@ -1,0 +1,3 @@
+Dotted around the map are Power-ups that can be used to help when you are in a spot of bother. These come in the form of health, machine gun ammunition or extra grenades.
+Only one unit can take a Power-up but they do replenish after a small period of time, so you will not be without for too long. This also applies with AI units; if they walk over one, they can pick it up. 
+The President can only pick up the health Power-up.

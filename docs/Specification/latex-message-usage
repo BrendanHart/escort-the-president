@@ -1,0 +1,54 @@
+\subsection{Usage of Message Object}
+\begin{flushleft}
+This section describes the use of Message Object to facilitate  the transmission of important game information.
+\end{flushleft}
+\subsubsection{Common}
+\begin{tabular}{|l|l|l|} \hline
+MESSAGE\_TYPE & VALUE & TEXT \\ \hline \hline
+KEEP\_ALIVE & & \\ \hline
+EXIT & & \\ \hline
+PRINT & & messages\\ \hline
+\end{tabular}
+\subsubsection{Server to Client}
+\begin{tabular}{|l|l|l|} \hline
+MESSAGE\_TYPE & VALUE & TEXT \\ \hline \hline
+PLAYER\_ACCEPT & id & \\ \hline
+PLAYER\_REJECT & & \\ \hline
+LOBBY\_LIST\_RESULT & lobbyIDs & lobbyNames \\ \hline
+LOBBY\_IDINVALID & & \\ \hline
+LOBBY\_AUTHFAIL & & \\ \hline
+LOBBY\_CREATED & lobbyID & lobbyName \\ \hline
+LOBBY\_LEFT & & \\ \hline
+LOBBY\_JOINED & & \\ \hline
+PLAYER\_JOINED & unitID & \\ \hline
+PLAYER\_LEFT & unitID & \\ \hline
+UNIT\_MOVED & unitID, newX, newY, newDir & \\ \hline
+PLAYER\_MESSAGE & unitID & message \\ \hline
+UNIT\_SHOT & unitID & \\ \hline
+UNIT\_THROW\_GRENADE & unitID & \\ \hline
+UNIT\_RELOAD & unitID & \\ \hline
+UNIT\_WEAPON\_SWITCH & unitID, weaponID & \\ \hline
+UNIT\_ROLLED & unitID & \\ \hline
+PRESIDENT\_IS\_SAFE & & \\ \hline
+GAME\_START & & \\ \hline
+MENACE\_START & unitID & \\ \hline
+MENACE\_END & unitID & \\ \hline
+UNIT\_TAKEN\_DAMAGE & unitID, hpLeft & \\ \hline
+GAMESTATE\_UPDATE & & \\ \hline
+\end{tabular}
+\subsubsection{Client to Server}
+\begin{tabular}{|l|l|l|} \hline
+MESSAGE\_TYPE & VALUE & TEXT \\ \hline \hline
+PLAYER\_REQUESTID & & player name \\ \hline
+LOBBY\_LIST & & \\ \hline
+LOBBY\_NEW & & name, password\\ \hline
+LOBBY\_JOIN & lobbyID & password \\ \hline
+LOBBY\_LEAVE & & \\ \hline
+MOVE & newX, newY, newDir & \\ \hline
+SEND\_MESSAGE & unitID & message \\ \hline
+SHOOT & & \\ \hline
+THROW\_GRENADE & & \\ \hline
+RELOAD & & \\ \hline
+SWITCH\_WEAPON & weaponID & \\ \hline
+ROLL & & \\ \hline 
+\end{tabular}

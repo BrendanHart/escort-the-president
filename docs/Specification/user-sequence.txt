@@ -1,0 +1,35 @@
+user opens the client window
+
+prompt user to enter name
+
+name sent to server
+
+server checks if unique
+if unique, create id and send user their id
+
+user enters main menu
+
+user clicks lobby list
+
+user clicks "create lobby button" and optional password
+
+server creates lobby object sets the lobby owner and user id and sends user the lobby id
+
+other players double click the lobby to join and if lobby is password protected, prompt user to enter password
+
+other players send lobby id and optional password to server
+
+server determines if authentication is successful
+
+
+
+inside a lobby, 
+lobby owner can start game if 2 or more players in lobby
+lobby owner can kick other players
+if lobby owner leaves, lobby is destroyed
+if lobby hasn't played a game in 30 minutes, detstroy the lobby
+
+after game,
+all players return to lobby and wait for owner to start next round
+
+

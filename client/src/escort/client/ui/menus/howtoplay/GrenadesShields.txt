@@ -1,0 +1,3 @@
+Not only can you shoot the enemy, but you have grenades which can be thrown for good measure! Again these are limited, so make sure to use them well! The default key mappings to cook and release grenades is G.
+Are you cornered on little health? Luckily you remembered your favourite blast shield! Switch to that to make a dash to safety (default key 3). Be mindful, though, you cannot shoot while holding your shield.
+Blast shields absorb all bullet damage and 80% of grenade damage for you and your allies. Blast shields have limited health however, so be conservative!
